@@ -1,2 +1,2 @@
 % : %.asm
-	dosbox -c "nasm -f bin -o $@.com $<" -c "$@.com"
+	rm *.COM; dosbox -c "nasm -f bin -o $@.com $<" -c "$@.com"
