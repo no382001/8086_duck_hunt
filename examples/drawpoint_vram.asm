@@ -26,7 +26,7 @@ mov [es:di], al
 infloop: 
     jmp infloop
 
-; otherwise text mode memory gets corrupted and writes random chars to the screen
+; restore text mode, otherwise text mode memory gets corrupted and writes random chars to the screen
 mov ah, 0
 mov al, 3
 int 10h

@@ -1,5 +1,5 @@
 ;nasm
-;draw pixel
+;draw sprite
 
 org 100h
 
