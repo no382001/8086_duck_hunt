@@ -13,6 +13,10 @@ draw_sprite:
     pop ax
     mov [raddr], ax         ; save return address, push bf ret 
 
+    mov ah, 0
+    mov al, 13h
+    int 10h
+
     mov ax, 0A000h          ; VGA memory segment
     mov es, ax
     pop si                  ; pop sprite address into si

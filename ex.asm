@@ -1,17 +1,21 @@
 org 100h
 
-mov ah, 0
-mov al, 13h
-int 10h
+infloop:
 
-push word 10  ; width
-push word 3   ; height
-push word 50  ; x
-push word 50  ; y
-push sprite   ; address of sprite
-call draw_sprite
+    push word 10  ; width
+    push word 3   ; height
+    push word 50  ; x
+    push word 50  ; y
+    push sprite   ; address of sprite
+    call draw_sprite
 
-infloop: 
+    push word 10  ; width
+    push word 3   ; height
+    push word 150 ; x
+    push word 50  ; y
+    push sprite   ; address of sprite
+    call draw_sprite
+
     jmp infloop
 
 
