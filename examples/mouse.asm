@@ -38,4 +38,4 @@ endss:
     int 20h
 
 stringright DB "Right Clicked $"
-stringleft DB "Left Clicked $" 
+stringleft DB "Left Clicked $"
